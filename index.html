@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuizMaster</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>QuizMaster</h1>
+    <p>Answer the questions:</p>
+
+    <label>1. Capital of India?</label>
+    <input type="text" id="q1" placeholder="Your answer...">
+
+    <label>2. 5 + 3 = ?</label>
+    <input type="text" id="q2" placeholder="Your answer...">
+
+    <label>3. HTML stands for?</label>
+    <input type="text" id="q3" placeholder="Your answer...">
+
+    <button onclick="calculateScore(strictScoring)">Check Strict Score</button>
+    <button onclick="calculateScore(lenientScoring)">Check Lenient Score</button>
+
+    <p id="scoreDisplay"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
